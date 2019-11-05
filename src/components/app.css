@@ -1,0 +1,104 @@
+body {
+  font-family: Verdana;
+  margin: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.app {
+  height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+}
+
+.canvas {
+  width: 100%;
+  height: 100%;
+  cursor: crosshair;
+}
+
+/*
+    Universal Styles
+*/
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+/*
+    NavBar
+*/
+
+.nav-bar {
+  background: #59646e;
+}
+
+.nav-bar__tool {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-bar__tool > svg {
+  width: 100%;
+  height: 100%;
+  fill: white;
+}
+
+.nav-bar__tool--active {
+  background: #b5226e;
+}
+
+/*
+Tool Panels
+*/
+
+.tool-panel {
+  background: #eff0f3;
+  flex-shrink: 0;
+  width: 232px;
+  padding-left: 10px;
+}
+
+.tool-panel--bold {
+  font-weight: bold;
+}
+
+.tool-panel__image-placeHolder {
+  width: 200px;
+  height: 200px;
+}
+
+.tool-panel__button {
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  background: #b5226e;
+}
+
+.tool-panel__button:hover {
+  background: #9d1e5f;
+  cursor: pointer;
+}
+
+/*
+Pen Panel
+*/
+
+.line-types__option {
+  margin: 10px 1px;
+  padding: 5px;
+  border: 0;
+  font-size: 15px;
+  background: #ceced0;
+}
+
+.line-types__option:hover,
+.line-types--active {
+  background: #35a6ff;
+  color: white;
+  cursor: pointer;
+}
